@@ -54,16 +54,16 @@ int main() {
 		Sleep(1);
 		api->Update();
 
-		if (IsCursorVisible())
-		{
-			continue;
-		}
-
 		const Transformation trans = extendedView->GetTransformation();
 
 		std::cout << std::fixed << std::setprecision(3);
 		std::cout << "Extended View Rot(deg) [Y: " << trans.Rotation.YawDegrees << ",P: " << trans.Rotation.PitchDegrees << ",R: " << trans.Rotation.RollDegrees << "] " <<
 			"Pos(mm) [X: " << trans.Position.X << ",Y: " << trans.Position.Y << ",Z: " << trans.Position.Z << "]          \r";
+
+		if (IsCursorVisible())
+		{
+			continue;
+		}
 
 		static float actualYaw = 0.0f;
 		static float actualPitch = 0.0f;
