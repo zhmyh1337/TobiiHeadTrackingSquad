@@ -1,0 +1,1 @@
+Tobii head tracking integration with Squad game. Can be used with any other game as well. Translates the data from Tobii head tracking sensors to mouse movement. Main file is `MyNewMain.cpp`. The settings can be changed there.
