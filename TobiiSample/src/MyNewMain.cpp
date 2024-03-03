@@ -10,14 +10,14 @@ using namespace TobiiGameIntegration;
 
 // settings tuned for Squad game with 3200x2000 res and 1000 DPI mouse
 // change only the numbers, unless you know what you're doing
-static constexpr float k_sens = 25.0f;
+static constexpr float k_sens = 30.0f;
 #if ENABLE_PITCH
 static constexpr float k_ySensMult = 0.25f;
 #else
 static constexpr float k_ySensMult = 0.0f;
 #endif
-static constexpr float k_deadYawIRL = 2.5f;
-static constexpr float k_deadPitchIRL = 2.5f;
+static constexpr float k_deadYawIRL = 7.5f;
+static constexpr float k_deadPitchIRL = 7.5f;
 static constexpr float k_maxYawIRL = 650.0f / k_sens + k_deadYawIRL;
 #if ENABLE_PITCH
 static constexpr float k_maxPitchIRL = 100.0f / (k_sens * k_ySensMult) + k_deadPitchIRL;
